@@ -37,4 +37,15 @@ The dataset currently includes **30 real job applications** (subset of 100+ appl
 ---
 
 ## 🧱 Database Schema (MySQL)
-
+```sql
+CREATE TABLE job_applications (
+    ID_Number INT,
+    Company_Name VARCHAR(100),
+    Job_Title VARCHAR(100),
+    Location VARCHAR(30),
+    Application_Date DATE,
+    Application_Status VARCHAR(30),
+    platform VARCHAR(50),
+    interview_stage VARCHAR(50),
+    outcome VARCHAR(30)
+);
